@@ -37,9 +37,7 @@ audioop-lts
 pip install -U discord.py-self python-dotenv audioop-lts
 
 2. Configuration
-
-Create a .env file in the project root:
-
+``
 DISCORD_TOKEN=your_token_here
 
 **claim reaction delay base (seconds)**
@@ -73,7 +71,7 @@ Example:
 rem
 megumin
 asuna
-
+``
 Run the Bot
 python main.py
 
