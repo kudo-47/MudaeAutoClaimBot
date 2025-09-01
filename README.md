@@ -57,12 +57,14 @@ python main.py
 
 
 You should see output like:
+```
 
 ✅ Logged in as USERNAME!
 📜 Loaded 123 characters
 🌍 Fetching timers in #games
 🎯 Watching for characters: ['rem', 'megumin', 'asuna']
 💠 Watching for kakera: ['kakeray','kakeral',...]
+```
 
 
 🔑 Owner Commands
@@ -104,13 +106,14 @@ Random delays: Introduces random ±1s offsets before clicks to mimic human behav
 Timeouts: $tu fetch, claim events, and kakera confirmations have explicit timeout handling.
 
 Character names are matched case-insensitive.
-
+```
 🧩 Example Console Logs
 📡 Fetching timers in #games-2 (per-channel only)
 🎲 Rolled character in #games-2: Kagari Hosho (kakera 42)
 ⏳ Waiting 9.80s before attempting claim for Kagari Hosho in #games-2...
 🛑 Claim/rt detected during rolls — stopping further rolls.
 ➡ Moving to next channel after claim in #games-2.
+```
 
 ❓ FAQ
 
