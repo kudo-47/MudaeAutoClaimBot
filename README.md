@@ -158,3 +158,10 @@ Character names are matched case-insensitive.
 
 **Q:** Can it double-claim?  
 **A:** No — locks prevent multiple claim attempts.  
+
+# 🎲 Mudae Auto-Claimer Bot
+
+[![Python](https://img.shields.io/badge/python-3.13+-blue.svg)](https://www.python.org/downloads/)
+[![Discord](https://img.shields.io/badge/discord.py--self-latest-blueviolet)](https://github.com/dolfies/discord.py-self)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
