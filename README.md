@@ -38,21 +38,21 @@ pip install -U discord.py-self python-dotenv audioop-lts
 
 Set these values in your `.env` file:
 
-| Variable                  | Example Value                                                                 | Description                                                                 |
-|---------------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| `DISCORD_TOKEN`           | `mfa.your_discord_token_here`                                                 | Your Discord account token.                                                 |
-| `TIMER`                   | `10`                                                                          | Base delay (seconds) before claim/reaction.                                 |
-| `CHARACTER_CHANNEL_ID`    | `123456789012345678`                                                          | Channel ID where your character list is stored.                             |
-| `COMMANDS_CHANNEL_ID`     | `123456789012345678`                                                          | Channel ID for bot owner-only commands.                                     |
-| `OWNER_ID`                | `123456789012345678`                                                          | Your Discord user ID.                                                       |
-| `ALLOWED_CHANNELS`        | `1163895503143043135,1310112309850406946`                                     | Comma-separated list of channel IDs where Mudae rolls are allowed.          |
-| `MIN_KAKERA`              | `200`                                                                         | Minimum kakera value required to auto-claim a character.                    |
-| `KAKERA_LIST`             | `["kakera","kakeraT","kakeraG","kakeraY","kakeraO","kakeraR","kakeraW","kakeraL"]` | Kakera reaction emojis.                                                |
-| `CLICK_RETRIES`           | `3`                                                                           | Number of times to retry clicking claim/kakera buttons.                     |
-| `CLICK_RETRY_DELAY`       | `0.8`                                                                         | Delay (in seconds) between click retries.                                   |
-| `ROLL_WAIT_EVENT_TIMEOUT` | `6.0`                                                                         | Timeout (in seconds) for waiting on claim/kakera confirmation events.       |
-| `ROLLING_COMMANDS`        | `$wa,$ha,$ma`                                                                 | Comma-separated list of rolling commands (used randomly).                   |
-| `DELAY_BETWEEN_ROLLS`     | `3`                                                                           | Seconds between each roll, randomized a bit for more human-like behavior    |
+| Variable                  | Example Value                                                                 |
+|---------------------------|-------------------------------------------------------------------------------|
+| `DISCORD_TOKEN`           | Your Discord account token.                                                 |
+| `TIMER`                   | Base delay (seconds) before claim/reaction.                                 |
+| `CHARACTER_CHANNEL_ID`    | Channel ID where your character list is stored.                             |
+| `COMMANDS_CHANNEL_ID`     | Channel ID for bot owner-only commands.                                     |
+| `OWNER_ID`                | Your Discord user ID.                                                       |
+| `ALLOWED_CHANNELS`        | Comma-separated list of channel IDs where Mudae rolls are allowed.          |
+| `MIN_KAKERA`              | Minimum kakera value required to auto-claim a character.                    |
+| `KAKERA_LIST`             | Kakera reaction emojis.                                                |
+| `CLICK_RETRIES`           | Number of times to retry clicking claim/kakera buttons.                     |
+| `CLICK_RETRY_DELAY`       | Delay (in seconds) between click retries.                                   |
+| `ROLL_WAIT_EVENT_TIMEOUT` | Timeout (in seconds) for waiting on claim/kakera confirmation events.       |
+| `ROLLING_COMMANDS`        | Comma-separated list of rolling commands (used randomly).                   |
+| `DELAY_BETWEEN_ROLLS`     | Seconds between each roll, randomized a bit for more human-like behavior    |
 ---
 
 ### 📂 Example `.env` file
