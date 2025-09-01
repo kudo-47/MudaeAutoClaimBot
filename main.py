@@ -30,6 +30,9 @@ CLICK_RETRY_DELAY = float(os.getenv("CLICK_RETRY_DELAY", 0.8))
 ROLL_WAIT_EVENT_TIMEOUT = float(os.getenv("ROLL_WAIT_EVENT_TIMEOUT", 6.0))
 DELAY_BETWEEN_ROLLS = int(os.getenv("DELAY_BETWEEN_ROLLS", 3))
 
+rolling_commands_str = os.getenv("ROLLING_COMMANDS", "$wa")
+ROLLING_COMMANDS = [cmd.strip() for cmd in rolling_commands_str.split(",") if cmd.strip()]
+
 def parse_env_list(env_value: str):
     """Parse comma or Python-list like env values into a list of strings."""
     if not env_value:
@@ -384,7 +387,8 @@ class MyClient(discord.Client):
 
                         # send a roll
                         try:
-                            await channel.send("$wa")
+                            cmd = random.choice(ROLLING_COMMANDS)
+                            await channel.send(cmd)
                             print(f"📩 Sent roll {i+1}/{rolls_left} in #{channel.name}")
                         except Exception as exc:
                             print(f"[#{channel.name}] ❗ Failed to send roll command: {exc}")
