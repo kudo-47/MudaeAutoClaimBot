@@ -1,40 +1,38 @@
-🎲 Mudae Auto-Claimer Bot
+# 🎲 Mudae Auto-Claimer Bot
 
-A Discord selfbot-style client that helps with auto-rolling, claiming characters, and kakera reactions for the Mudae bot
+A Discord selfbot-style client that helps with auto-rolling, claiming characters, and kakera reactions for the Mudae bot.
 
+⚠️ **Disclaimer**  
+This script automates interaction with Mudae. Using automation can violate server rules or Discord’s ToS.  
+Use only in private servers or with permission. You are solely responsible for how you use this.
 
-⚠️ Disclaimer
-This script automates interaction with Mudae. Using automation can violate server rules or Discord’s ToS. Use only in private servers or with permission. You are solely responsible for how you use this.
+---
 
-🚀 Features
+## 🚀 Features
+- ✅ Auto-claim characters from your watchlist  
+- ✅ Claim characters based on minimum kakera value  
+- ✅ Supports `$rt` flow (auto uses `$rt` when claim is on cooldown)  
+- ✅ Auto-reacts to kakera buttons (with optional confirmation)  
+- ✅ Parses `$tu` for timers (claim, rolls, kakera cooldown, `$rt`, daily, vote)  
+- ✅ Retries failed clicks and avoids duplicate claims  
+- ✅ Per-channel timers, locks, and claim events for safe concurrency  
 
-✅ Auto-claim characters from your watchlist.
+---
 
-✅ Claim characters based on minimum kakera value.
+## ⚙️ Setup
 
-✅ Supports $rt flow (auto uses $rt when claim is on cooldown).
+### Requirements
+- Python **3.13+**
+- [`discord.py-self`](https://pypi.org/project/discord.py-self/)  
+- `python-dotenv`  
+- `audioop-lts`  
 
-✅ Auto-reacts to kakera buttons (with optional confirmation).
+Install them with:
 
-✅ Parses $tu for timers (claim, rolls, kakera cooldown, $rt, daily, vote).
-
-✅ Retries failed clicks and avoids duplicate claims.
-
-✅ Per-channel timers, locks, and claim events for safe concurrency.
-
-⚙️ Setup
-1. Requirements
-
-Python 3.13+
-
-discord.py-self
- (selfbot variant)
-
-python-dotenv
-
-audioop-lts
-
+```bash
 pip install -U discord.py-self python-dotenv audioop-lts
+```
+
 
 2. Configuration
 
@@ -53,16 +51,19 @@ megumin
 asuna
 
 3. Run the Bot
+```bash
 python main.py
+```
 
 
 You should see output like:
 
 ✅ Logged in as USERNAME!
 📜 Loaded 123 characters
-🌍 Fetching timers in #games (global + per-channel)
+🌍 Fetching timers in #games
 🎯 Watching for characters: ['rem', 'megumin', 'asuna']
 💠 Watching for kakera: ['kakeray','kakeral',...]
+
 
 🔑 Owner Commands
 
