@@ -37,8 +37,8 @@ audioop-lts
 pip install -U discord.py-self python-dotenv audioop-lts
 
 2. Configuration
-``
-DISCORD_TOKEN=your_token_here
+
+# DISCORD_TOKEN=your_token_here
 
 **claim reaction delay base (seconds)**
 TIMER=10
