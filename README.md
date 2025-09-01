@@ -66,22 +66,19 @@ You should see output like:
 💠 Watching for kakera: ['kakeray','kakeral',...]
 ```
 
+## 🔑 Owner Commands
 
-🔑 Owner Commands
+Owner commands must be typed in `COMMANDS_CHANNEL_ID` by `OWNER_ID`.
 
-Owner commands must be typed in COMMANDS_CHANNEL_ID by OWNER_ID.
+| Command            | Description                                  |
+|--------------------|----------------------------------------------|
+| `$reloadchars`     | Reload list from `CHARACTER_CHANNEL_ID`.     |
+| `$addchars rem, asuna` | Add characters to list.                 |
+| `$removechars rem, asuna` | Remove characters from list.         |
+| `$listchars`       | Display current list of characters.          |
+| `$clearallchars`   | Wipe all characters after confirmation.      |
+| `!help`            | Show help.                                   |
 
-$reloadchars → Reload list from CHARACTER_CHANNEL_ID.
-
-$addchars rem, asuna → Add characters to list.
-
-$removechars rem, asuna → Remove characters.
-
-$listchars → Display current list.
-
-$clearallchars → Wipe all characters after confirmation.
-
-!help → Show help.
 
 📋 Flow Overview
 
@@ -115,13 +112,13 @@ Character names are matched case-insensitive.
 ➡ Moving to next channel after claim in #games-2.
 ```
 
-❓ FAQ
+## ❓ FAQ
 
-Q: The bot keeps timing out when fetching $tu.
-A: Increase the timeout in fetch_startup_timers, or reduce frequency of checks.
+**Q:** The bot keeps timing out when fetching `$tu`.  
+**A:** Increase timeout in `ROLL_WAIT_EVENT_TIMEOUT`, or reduce frequency of checks.  
 
-Q: It didn’t claim even though character is in my list.
-A: Check that character name in CHARACTER_CHANNEL_ID exactly matches Mudae’s output (case ignored, but spacing must match).
+**Q:** It didn’t claim even though character is in my list.  
+**A:** Check spacing — names must exactly match Mudae’s output (case ignored).  
 
-Q: Can it double-claim?
-A: No — claim_in_progress locks prevent multiple attempts.
+**Q:** Can it double-claim?  
+**A:** No — locks prevent multiple claim attempts.  
