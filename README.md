@@ -34,21 +34,56 @@ pip install -U discord.py-self python-dotenv audioop-lts
 ```
 
 
-2. Configuration
+## ⚙️ Configuration
 
-**Make a new server and create two channels. one is for storing the character names(CHARACTER_CHANNEL_ID) and another is for commands channel(COMMANDS_CHANNEL_ID)**
+Set these values in your `.env` file:
 
-Character List
+| Variable                  | Example Value                                                                 | Description                                                                 |
+|---------------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| `DISCORD_TOKEN`           | `mfa.your_discord_token_here`                                                 | Your Discord account token.                                                 |
+| `TIMER`                   | `10`                                                                          | Base delay (seconds) before claim/reaction.                                 |
+| `CHARACTER_CHANNEL_ID`    | `123456789012345678`                                                          | Channel ID where your character list is stored.                             |
+| `COMMANDS_CHANNEL_ID`     | `123456789012345678`                                                          | Channel ID for bot owner-only commands.                                     |
+| `OWNER_ID`                | `123456789012345678`                                                          | Your Discord user ID.                                                       |
+| `ALLOWED_CHANNELS`        | `1163895503143043135,1310112309850406946`                                     | Comma-separated list of channel IDs where Mudae rolls are allowed.          |
+| `MIN_KAKERA`              | `200`                                                                         | Minimum kakera value required to auto-claim a character.                    |
+| `KAKERA_LIST`             | `["kakera","kakeraT","kakeraG","kakeraY","kakeraO","kakeraR","kakeraW","kakeraL"]` | Kakera reaction emojis.                                                |
+| `CLICK_RETRIES`           | `3`                                                                           | Number of times to retry clicking claim/kakera buttons.                     |
+| `CLICK_RETRY_DELAY`       | `0.8`                                                                         | Delay (in seconds) between click retries.                                   |
+| `ROLL_WAIT_EVENT_TIMEOUT` | `6.0`                                                                         | Timeout (in seconds) for waiting on claim/kakera confirmation events.       |
+| `ROLLING_COMMANDS`        | `$wa,$ha,$ma`                                                                 | Comma-separated list of rolling commands (used randomly).                   |
+| `DELAY_BETWEEN_ROLLS`     | `3`                                                                           | Seconds between each roll, randomized a bit for more human-like behavior    |
+---
 
-The bot loads claim targets from messages inside the CHARACTER_CHANNEL_ID.
+### 📂 Example `.env` file
 
-Each line in that channel = one character’s name.
+```env
+# Discord token (mfa. if 2FA enabled)
+DISCORD_TOKEN=mfa.your_discord_token_here
 
-Example:
+# Base timer delay in seconds
+TIMER=10
 
-rem
-megumin
-asuna
+# Channels & owner setup
+CHARACTER_CHANNEL_ID=123456789012345678
+COMMANDS_CHANNEL_ID=123456789012345678
+OWNER_ID=123456789012345678
+
+# Allowed rolling channels
+ALLOWED_CHANNELS=1163895503143043135,1310112309850406946
+
+# Claiming settings
+MIN_KAKERA=200
+KAKERA_LIST=["kakera","kakeraT","kakeraG","kakeraY","kakeraO","kakeraR","kakeraW","kakeraL"]
+
+# Retry/timeout settings
+CLICK_RETRIES=3
+CLICK_RETRY_DELAY=0.8
+ROLL_WAIT_EVENT_TIMEOUT=6.0
+
+# Rolling commands (randomized use)
+ROLLING_COMMANDS=$wa,$ha,$ma
+```
 
 3. Run the Bot
 ```bash
