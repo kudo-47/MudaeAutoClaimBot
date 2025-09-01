@@ -51,8 +51,8 @@ Example:
 rem
 megumin
 asuna
-``
-Run the Bot
+
+3. Run the Bot
 python main.py
 
 
