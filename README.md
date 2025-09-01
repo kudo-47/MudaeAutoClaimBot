@@ -1,7 +1,7 @@
 🎲 Mudae Auto-Claimer Bot
 
 A Discord selfbot-style client that helps with auto-rolling, claiming characters, and kakera reactions for the Mudae bot
-.
+
 
 ⚠️ Disclaimer
 This script automates interaction with Mudae. Using automation can violate server rules or Discord’s ToS. Use only in private servers or with permission. You are solely responsible for how you use this.
@@ -12,7 +12,7 @@ This script automates interaction with Mudae. Using automation can violate serve
 
 ✅ Claim characters based on minimum kakera value.
 
-✅ Supports $rt flow (auto uses $rt when claim is locked).
+✅ Supports $rt flow (auto uses $rt when claim is on cooldown).
 
 ✅ Auto-reacts to kakera buttons (with optional confirmation).
 
@@ -38,29 +38,9 @@ pip install -U discord.py-self python-dotenv audioop-lts
 
 2. Configuration
 
-Create a .env file in the project root:
+**Make a new server and create two channels. one is for storing the character names(CHARACTER_CHANNEL_ID) and another is for commands channel(COMMANDS_CHANNEL_ID)**
 
-DISCORD_TOKEN=your_token_here
-
-# claim reaction delay base (seconds)
-TIMER=10
-
-# Channel IDs
-CHARACTER_CHANNEL_ID=123456789012345678   # where your character list is stored
-COMMANDS_CHANNEL_ID=123456789012345678   # bot owner-only commands
-OWNER_ID=123456789012345678              # your Discord user ID
-
-# Allowed Mudae rolling channels
-# separate with commas
-ALLOWED_CHANNELS=1163895503143043135,1310112309850406946
-
-# minimum kakera value to auto-claim
-MIN_KAKERA=200
-
-# kakera reaction emoji list (from $tu stock display)
-KAKERA_LIST=["kakera","kakeraT","kakeraG","kakeraY","kakeraO","kakeraR","kakeraW","kakeraL"]
-
-3. Character List
+Character List
 
 The bot loads claim targets from messages inside the CHARACTER_CHANNEL_ID.
 
@@ -72,7 +52,7 @@ rem
 megumin
 asuna
 
-4. Run the Bot
+3. Run the Bot
 python main.py
 
 
