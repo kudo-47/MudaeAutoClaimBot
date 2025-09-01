@@ -1,5 +1,9 @@
 # 🎲 Mudae Auto-Claimer Bot
 
+[![Python](https://img.shields.io/badge/python-3.13+-blue.svg)](https://www.python.org/downloads/)
+[![Discord](https://img.shields.io/badge/discord.py--self-latest-blueviolet)](https://github.com/dolfies/discord.py-self)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A Discord selfbot-style client that helps with auto-rolling, claiming characters, and kakera reactions for the Mudae bot.
 
 ⚠️ **Disclaimer**  
@@ -159,9 +163,21 @@ Character names are matched case-insensitive.
 **Q:** Can it double-claim?  
 **A:** No — locks prevent multiple claim attempts.  
 
-# 🎲 Mudae Auto-Claimer Bot
+---
 
-[![Python](https://img.shields.io/badge/python-3.13+-blue.svg)](https://www.python.org/downloads/)
-[![Discord](https://img.shields.io/badge/discord.py--self-latest-blueviolet)](https://github.com/dolfies/discord.py-self)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+You are free to use, modify, and distribute this software, provided that the original copyright and license notice are included in all copies or substantial portions of the software.
+
+---
+
+## ⚠️ Disclaimer
+
+This project is not affiliated with Discord or Mudae.  
+Automating interactions with Discord bots may violate Discord’s Terms of Service and/or individual server rules.  
+Use this software **at your own risk**. The authors assume **no responsibility** for any account actions (suspensions, bans, or other penalties) that may occur from misuse of this project.
+
+
 
