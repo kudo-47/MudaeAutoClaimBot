@@ -58,8 +58,8 @@ Set these values in your `.env` file:
 ### 📂 Example `.env` file
 
 ```env
-# Discord token (mfa. if 2FA enabled)
-DISCORD_TOKEN=mfa.your_discord_token_here
+# Discord token 
+DISCORD_TOKEN= "your_discord_token_here"
 
 # Base timer delay in seconds
 TIMER=10
@@ -83,6 +83,7 @@ ROLL_WAIT_EVENT_TIMEOUT=6.0
 
 # Rolling commands (randomized use)
 ROLLING_COMMANDS=$wa,$ha,$ma
+DELAY_BETWEEN_ROLLS= 3 
 ```
 
 3. Run the Bot
