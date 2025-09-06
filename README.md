@@ -179,5 +179,7 @@ This project is not affiliated with Discord or Mudae.
 Automating interactions with Discord bots may violate Discord’s Terms of Service and/or individual server rules.  
 Use this software **at your own risk**. The authors assume **no responsibility** for any account actions (suspensions, bans, or other penalties) that may occur from misuse of this project.
 
-
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=kudo-47.MudaeAutoClaimBot)
+![Stars](https://img.shields.io/github/stars/kudo-47/MudaeAutoClaimBot?style=social)
+![Forks](https://img.shields.io/github/forks/kudo-47/MudaeAutoClaimBot?style=social)
 
